@@ -29,7 +29,9 @@ const fetchPokemons = async (
 ): Promise<PokemonResponse> => {
   return await fetch(
     `https://pokeapi.co/api/v2/pokemon?limit=${pageSize}&offset=${offset}`,
-  ).then(async (res) => await res.json())
+  )
+    .then(async (res) => await res.json())
+    .catch((error) => console.log(error))
 }
 
 const Full: FC = () => {
