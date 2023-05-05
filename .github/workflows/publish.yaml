@@ -10,17 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: clone repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: "0"
 
       - name: setup node
         uses: actions/setup-node@master
         with: 
-          node-version: 14.x
+          node-version: 18.x
 
       - name: restore lerna 
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with: 
           path: |
             node_modules
@@ -28,12 +28,7 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
 
       - name: sets up npm authentication
-        run: |
-          cat > .npmrc <<EOF
-          //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
-          registry=https://registry.npmjs.org/
-          always-auth=true
-          EOF
+        run: echo //registry.npmjs.org/:_authToken=${NPM_TOKEN} > .npmrc
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -44,6 +39,6 @@ jobs:
         run: yarn run build
 
       - name: publishes latest version
-        run: yarn lerna publish from-package --yes
+        run: yarn lerna publish from-package --yes --no-verify-access
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

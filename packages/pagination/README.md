@@ -1,5 +1,7 @@
 # @ajna/pagination
 
+This is a fork of an [@ajna/pagination](https://github.com/niconiahi/ajna)
+
 ## Table of Contents
 
 - [Version](#version)
