@@ -33,6 +33,10 @@ export const generatePages = ({
     return allPages
   }
 
+  if (innerLimit >= pagesCount) {
+    return allPages
+  }
+
   const outerLeftPages = allPages.slice(0, outerLimit)
   const outerRightPages = allPages.slice(1).slice(-outerLimit)
 
@@ -92,7 +96,5 @@ export const generatePages = ({
       return [...acc, ...checkPageForSeparator()]
     }, [])
 
-  const pages = addSeparators(unduplicatedPages)
-
-  return pages
+  return addSeparators(unduplicatedPages)
 }
