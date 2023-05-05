@@ -47,7 +47,7 @@
     "clean": "lerna run clean && yarn clean:b",
     "lint": "lerna run lint --stream",
     "lint:fix": "lerna run lint:fix --stream",
-    "bootstrap": "yarn clean && lerna bootstrap -- --no-lockfile",
+    "bootstrap": "lerna bootstrap -- --no-lockfile",
     "build": "lerna run build --stream",
     "prepare": "husky install"
   },
