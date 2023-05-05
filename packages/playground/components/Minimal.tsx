@@ -8,7 +8,7 @@ import {
   PaginationPrevious,
   PaginationPageGroup,
   PaginationContainer,
-} from "@ajna/pagination"
+} from "@paradox37/ajna-pagination"
 
 const Minimal: FC = () => {
   const { pages, pagesCount, currentPage, setCurrentPage } = usePagination({

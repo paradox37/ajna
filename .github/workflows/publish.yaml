@@ -34,6 +34,8 @@ jobs:
           registry=https://registry.npmjs.org/
           always-auth=true
           EOF
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: install dependencies
         run: yarn bootstrap
@@ -42,4 +44,6 @@ jobs:
         run: yarn run build
 
       - name: publishes latest version
-        run: yarn run publish -- -y
+        run: yarn lerna publish from-package --yes
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

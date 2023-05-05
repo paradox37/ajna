@@ -9,7 +9,7 @@ import {
   PaginationPageGroup,
   PaginationContainer,
   PaginationSeparator,
-} from "@ajna/pagination"
+} from "@paradox37/ajna-pagination"
 
 type Pokemon = {
   name: string

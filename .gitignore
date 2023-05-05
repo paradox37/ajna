@@ -5,3 +5,6 @@ packages/*/build
 packages/*/node_modules
 
 .env
+.idea
+lerna-debug.log
+.npmrc

@@ -1,6 +1,6 @@
 {
-  "name": "@ajna/playground",
-  "version": "1.5.2",
+  "name": "@paradox37/ajna-playground",
+  "version": "1.5.3",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,17 +11,17 @@
     "lint:types": "tsc --noEmit"
   },
   "dependencies": {
-    "@ajna/pagination": "1.4.19",
+    "@paradox37/ajna-pagination": "1.4.21",
     "@chakra-ui/react": "^2.2.1",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
-    "framer-motion": "^6.3.11",
-    "next": "11.0.1",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "framer-motion": "^7.10.3",
+    "next": "12.3.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^17.0.14",
-    "@types/react-dom": "^17.0.9"
+    "@types/react": "^18.2.5",
+    "@types/react-dom": "^18.2.3"
   }
 }

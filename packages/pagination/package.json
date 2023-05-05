@@ -1,13 +1,20 @@
 {
-  "version": "1.4.19",
-  "homepage": "https://github.com/niconiahi/ajna",
-  "name": "@ajna/pagination",
-  "main": "./dist/index.js",
+  "version": "1.4.21",
+  "homepage": "https://github.com/paradox37/ajna",
+  "name": "@paradox37/ajna-pagination",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.js",
   "types": "./dist/index.d.ts",
   "author": "Nicolas Accetta <nicolas.accetta@gmail.com> (https://github.com/niconiahi/)",
+  "contributors": [
+    {
+      "name" : "Igor Marić",
+      "url" : "https://github.com/paradox37"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/niconiahi/ajna.git",
+    "url": "git+ssh://git@github.com/paradox37/ajna.git",
     "directory": "packages/pagination"
   },
   "keywords": [
@@ -20,7 +27,7 @@
     "start": "react-scripts start",
     "clean": "rm -rf node_modules yarn.lock",
     "prebuild": "rm -rf dist",
-    "build": "rollup --config rollup.config.js",
+    "build": "rollup --config rollup.config.mjs",
     "build:types": "tsc --declaration --emitDeclarationOnly --declarationDir dist",
     "lint": "eslint src --ext ts,tsx",
     "lint:fix": "yarn lint --fix",
@@ -33,42 +40,42 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "framer-motion": "^6.3.11",
+    "framer-motion": "^7.10.3",
     "lodash.union": "^4.6.0"
   },
   "peerDependencies": {
     "@chakra-ui/react": "^2.2.1",
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
-    "framer-motion": "^6.3.11",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
+    "framer-motion": "^7.10.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
   },
   "devDependencies": {
     "@chakra-ui/react": "^2.2.1",
-    "@emotion/react": "^11.9.0",
+    "@emotion/react": "^11.10.8",
     "@emotion/styled": "^11.8.1",
-    "@rollup/plugin-babel": "^5.3.1",
-    "@rollup/plugin-commonjs": "^22.0.0",
-    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
     "@types/lodash.union": "^4.6.7",
-    "@types/react": "^18.0.12",
-    "@types/react-dom": "^18.0.5",
-    "framer-motion": "^6.3.11",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-icons": "^4.4.0",
+    "@types/react": "^18.2.5",
+    "@types/react-dom": "^18.2.3",
+    "framer-motion": "^7.10.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "react-scripts": "5.0.1",
-    "rollup": "^2.75.6",
+    "rollup": "^3.21.5",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.32.1",
+    "rollup-plugin-typescript2": "^0.34.1",
     "typescript": "~4.7.3"
   },
   "description": "## Table of Contents",
   "bugs": {
-    "url": "https://github.com/niconiahi/ajna/issues"
+    "url": "https://github.com/paradox37/ajna/issues"
   },
   "license": "MIT",
   "gitHead": "de833a6d885bf54d9d26d53f4600b9f8ba02b4ed"

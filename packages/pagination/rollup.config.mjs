@@ -14,8 +14,14 @@ export default [
     input: ENTRY_FILE,
     output: [
       {
-        file: `${OUTPUT_DIR}/${PACKAGE_NAME}.js`,
+        file: `${OUTPUT_DIR}/${PACKAGE_NAME}.esm.js`,
         format: "es",
+        exports: "named",
+        name: PACKAGE_NAME,
+      },
+      {
+        file: `${OUTPUT_DIR}/${PACKAGE_NAME}.cjs.js`,
+        format: "cjs",
         exports: "named",
         name: PACKAGE_NAME,
       },
