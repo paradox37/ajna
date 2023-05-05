@@ -107,11 +107,11 @@ const Full: FC = () => {
           w="full"
         >
           <PaginationPrevious
-            isDisabled
             _hover={{
               bg: "yellow.400",
             }}
             bg="yellow.300"
+            isDisabled={isDisabled}
             onClick={() => console.warn("I'm clicking the previous")}
           >
             <Text>Previous</Text>
@@ -121,9 +121,9 @@ const Full: FC = () => {
             align="center"
             separator={
               <PaginationSeparator
-                isDisabled
                 bg="blue.300"
                 fontSize="sm"
+                isDisabled={isDisabled}
                 jumpSize={11}
                 w={7}
                 onClick={() => console.warn("I'm clicking the separator")}
