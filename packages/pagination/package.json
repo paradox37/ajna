@@ -1,5 +1,5 @@
 {
-  "version": "1.4.22",
+  "version": "1.4.21",
   "homepage": "https://github.com/paradox37/ajna",
   "name": "@paradox37/ajna-pagination",
   "main": "./dist/index.cjs.js",
