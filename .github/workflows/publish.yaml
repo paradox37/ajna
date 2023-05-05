@@ -10,17 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: clone repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: "0"
 
       - name: setup node
         uses: actions/setup-node@master
         with: 
-          node-version: 14.x
+          node-version: 18.x
 
       - name: restore lerna 
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with: 
           path: |
             node_modules
