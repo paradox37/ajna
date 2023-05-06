@@ -25,8 +25,8 @@
   ],
   "scripts": {
     "start": "react-scripts start",
-    "clean": "rm -rf node_modules yarn.lock",
-    "prebuild": "rm -rf dist",
+    "clean": "del-cli node_modules yarn.lock",
+    "prebuild": "del-cli dist",
     "build": "rollup --config rollup.config.mjs",
     "build:types": "tsc --declaration --emitDeclarationOnly --declarationDir dist",
     "lint": "eslint src --ext ts,tsx",
