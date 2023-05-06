@@ -28,7 +28,9 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
 
       - name: sets up npm authentication
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+        run: echo //registry.npmjs.org/:_authToken=${NPM_TOKEN} > .npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: install dependencies
         run: yarn bootstrap
