@@ -3123,6 +3123,14 @@
   dependencies:
     "@octokit/openapi-types" "^17.1.1"
 
+"@paradox37/ajna-pagination@1.4.21":
+  version "1.4.21"
+  resolved "https://registry.yarnpkg.com/@paradox37/ajna-pagination/-/ajna-pagination-1.4.21.tgz#ed73b0a45a2f9397ea5680d5fe3f22608b3c506f"
+  integrity sha512-uIZgSNI7rSxVvtUX9eEE/1AIlkHX2g4dSGh8+Djv/O4jGKMunxueLbtak0QgtB+xG4NDRWcC8xFJs5jjNcg3wg==
+  dependencies:
+    framer-motion "^7.10.3"
+    lodash.union "^4.6.0"
+
 "@parcel/watcher@2.0.4":
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/@parcel/watcher/-/watcher-2.0.4.tgz#f300fef4cc38008ff4b8c29d92588eced3ce014b"
@@ -13318,7 +13326,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==
 
-"typescript@^3 || ^4", typescript@^4.3.4:
+"typescript@^3 || ^4", typescript@^4.7.3:
   version "4.9.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
