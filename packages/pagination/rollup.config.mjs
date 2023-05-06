@@ -29,7 +29,7 @@ export default [
     plugins: [
       peerDepsExternal(),
       resolve(),
-      babel({ inputSourceMap: true }),
+      babel({ babelHelpers: 'bundled' }),
       commonjs(),
       terser(),
       typescript(),
