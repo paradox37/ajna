@@ -1,5 +1,5 @@
 {
-  "version": "1.4.22",
+  "version": "1.4.23",
   "homepage": "https://github.com/paradox37/ajna",
   "name": "@paradox37/ajna-pagination",
   "main": "./dist/index.cjs.js",
@@ -58,6 +58,8 @@
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^24.1.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-terser": "^0.4.1",
+    "@rollup/plugin-typescript": "^11.1.0",
     "@types/lodash.union": "^4.6.7",
     "@types/react": "^18.2.5",
     "@types/react-dom": "^18.2.3",
@@ -68,8 +70,6 @@
     "react-scripts": "5.0.1",
     "rollup": "^3.21.5",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "@rollup/plugin-terser": "^0.4.1",
-    "@rollup/plugin-typescript": "^11.1.0",
     "typescript": "~4.7.3"
   },
   "description": "## Table of Contents",
