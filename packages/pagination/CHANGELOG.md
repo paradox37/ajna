@@ -11,6 +11,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [1.4.22](https://github.com/paradox37/ajna/compare/@paradox37/ajna-pagination@1.4.21...@paradox37/ajna-pagination@1.4.22) (2023-05-06)
+
+**Note:** Version bump only for package @paradox37/ajna-pagination
+
+
+
+
+
 
 ## [1.4.19](https://github.com/niconiahi/ajna/compare/@ajna/pagination@1.4.18...@ajna/pagination@1.4.19) (2022-06-09)
 
