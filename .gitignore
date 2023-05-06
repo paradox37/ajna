@@ -8,3 +8,4 @@ packages/*/node_modules
 .idea
 lerna-debug.log
 .npmrc
+.DS_Store
