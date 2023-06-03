@@ -11,16 +11,18 @@
     "lint:types": "tsc --noEmit"
   },
   "dependencies": {
-    "@paradox37/ajna-pagination": "1.4.21",
     "@chakra-ui/react": "^2.2.1",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
+    "@paradox37/ajna-pagination": "1.4.21",
     "framer-motion": "^7.10.3",
     "next": "13.4.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@types/node": "20.2.5",
     "@types/react": "^18.2.5",
     "@types/react-dom": "^18.2.3"
   }
